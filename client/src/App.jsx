@@ -1,10 +1,17 @@
-import React from 'react'
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import ProfilePage from './pages/ProfilePage'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-5xl text-amber-300'>hi</h1>
+    <div className='bg-[url("/src/assets/wallpaper.jpg")] bg-cover h-screen'>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
     </div>
   )
 }

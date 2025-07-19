@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --color-charcoal: #2F2F2F;
+    --color-primary: #f65f73;
+    --color-hover:#f14057
+    
+}
+
 * {
     font-family: "Outfit", sans-serif;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 ::-webkit-scrollbar {
     display: none;

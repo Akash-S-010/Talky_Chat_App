@@ -40,19 +40,19 @@ const Sidebar = ({ selectedUser, setSelectedUser }) => {
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center gap-2">
               <img src={logo} alt="logo" className="w-10" />
-              <h4 className="font-bold text-3xl text-primary">Talky</h4>
+              <h4 className="font-bold text-3xl text-violet-500">Talky</h4>
             </div>
             <div className="relative py-2 group">
               <EllipsisVertical className="max-h-5 cursor-pointer text-black" />
-              <div className="absolute right-0 top-full z-10 w-32 px-5 py-3 rounded-md bg-[#fd7f90f1] hidden group-hover:block">
+              <div className="absolute right-0 top-full z-10 w-32 px-5 py-3 rounded-md bg-violet-600 hidden group-hover:block">
                 <p
                   onClick={() => navigate("/profile")}
-                  className="cursor-pointer text-sm hover:text-charcoal"
+                  className="cursor-pointer text-sm hover:text-violet-300"
                 >
                   Edit profile
                 </p>
                 <hr className="my-2 border-t border-gray-200" />
-                <p className="cursor-pointer text-sm hover:text-charcoal">
+                <p className="cursor-pointer text-sm hover:text-violet-300">
                   Logout
                 </p>
               </div>
@@ -77,7 +77,7 @@ const Sidebar = ({ selectedUser, setSelectedUser }) => {
             onClick={() => setSelectedUser(user)}
             key={i}
             className={`relative flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors duration-200
-           hover:bg-violet-500/30 ${selectedUser?._id === user._id ? "bg-[#8185B2]/30" : ""}`}
+           hover:bg-violet-500/30 ${selectedUser?._id === user._id ? "bg-[#8185B2]/50" : ""}`}
           >
             <img
               src={

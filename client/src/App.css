@@ -2,10 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-charcoal: #2F2F2F;
-    --color-primary: #f65f73;
-    --color-hover:#f14057
-    
+    --color-charcoal: #2F2F2F;    
 }
 
 * {

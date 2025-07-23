@@ -39,7 +39,7 @@ const ChatSection = ({ selectedUser }) => {
   }, []);
 
   return selectedUser ? (
-    <div className="px-5 py-3 bg-[#8185B2]/30 h-full overflow-y-scroll relative rounded">
+    <div className="px-5 py-3 bg-[#8185B2]/40 h-full overflow-y-scroll relative ">
       {/* Header */}
       <div className="flex items-center gap-3 py-4 border-b border-stone-500">
         <img
@@ -47,7 +47,7 @@ const ChatSection = ({ selectedUser }) => {
           alt="profile"
           className="w-8 rounded-full"
         />
-        <p className="flex-1 text-lg text-charcoal font-bold flex items-center gap-2">
+        <p className="flex-1 text-lg text-charcoal font-medium flex items-center gap-2">
           Martin John
           <div className="w-2 h-2 rounded-full bg-green-300 inline-block" />
         </p>

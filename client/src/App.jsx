@@ -7,7 +7,7 @@ import ChattingPage from './pages/ChattingPage'
 
 const App = () => {
   return (
-    <div className='bg-[url("/src/assets/wallpaper.jpg")] bg-cover h-screen'>
+    <div className='bg-[url("/src/assets/wallpaper.jpg")] bg-cover h-screen backdrop-blur'>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/chat" element={<ChattingPage />} />

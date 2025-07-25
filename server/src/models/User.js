@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    username: {
+    fullName: {
         type: String,
         required: true,
     },
@@ -13,11 +13,15 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
+        minlength: 6,
     },
     profilePic: {
         type: String,
-        default: "https://c1.klipartz.com/pngpicture/314/450/sticker-png-circle-user-profile-avatar-computer-program-symbol-oval.png",
+        default:""
     },
+    bio: {
+        type: String,
+    }
 }, {
     timestamps: true,
 });

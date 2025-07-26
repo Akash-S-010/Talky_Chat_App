@@ -4,6 +4,7 @@ import http from "http";
 import cors from "cors";
 import connectDB from "./src/config/db.js";
 import userRoutes from "./src/routes/userRoutes.js";
+import messageRoutes from "./src/routes/messagesRoutes.js";
 
 
 const app = express();
@@ -22,6 +23,7 @@ app.use("/api/status", (req, res) => {
 
 // api routes
 app.use("/api/auth", userRoutes);
+app.use("api/messages", messageRoutes);
 
 
 

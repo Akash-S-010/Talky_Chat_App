@@ -3,6 +3,7 @@ import "dotenv/config";
 import http from "http";
 import cors from "cors";
 import connectDB from "./src/config/db.js";
+import userRoutes from "./src/routes/userRoutes.js";
 
 
 const app = express();
@@ -13,9 +14,17 @@ const server = http.createServer(app);
 app.use(cors());
 app.use(express.json());
 
+// test route
 app.use("/api/status", (req, res) => {
     res.send("Server is running");``
 })
+
+
+// api routes
+app.use("/api/auth", userRoutes);
+
+
+
 
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
